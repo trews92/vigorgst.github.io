@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title> Random Fight</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        td{
+            border-bottom: 1px dimgray solid;
+            padding: 10px 50px 10px 10px;
+            vertical-align: top;
+        }
+        ul{padding: 0px;margin: 0px;padding-left: 10px}
+        li{padding: 0px;}
+
+    </style>
+</head>
+<body>
+<div><h1>Release Notes</h1></div>
+<div style="width: 1000px">
+    <table style="background: beige">
+        <tr>
+            <td><b>Version</b></td>
+            <td><b>Date</b></td>
+            <td><b>Release Notes</b></td>
+        </tr>
+        <tr>
+            <td>0.1</br><a href="https://shabugames.bitbucket.io/play/2d_random_td/0_1/">Web</a></td>
+            <td>04/07/2023</td>
+            <td>
+                <ul>
+                    <li>Tạo flow UI/UX chính</li>
+                    <li>Làm tính năng GamePlay chính , mua + merge trụ</li>
+                </ul>
+            </td>
+        </tr>
+		<tr>
+            <td>0.2</br><a href="https://shabugames.bitbucket.io/play/2d_random_td/0_2/">Web</a></td>
+            <td>14/07/2023</td>
+            <td>
+                <ul>
+                    <li>Thay UI Game Play </li>
+                    <li>Thả quái theo đợt, trụ có thể bắn quái</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>0.3</br>
+                <!--<a href="https://shabugames.bitbucket.io/play/2d_random_td/0_3/">Web</a>-->
+                <a href="https://drive.google.com/file/d/1KJ9zxqNDMID9X0jV3ksr2z3j-L7PNa4T/view?usp=sharing">APK</a>
+            </td>
+            <td>18/07/2023</td>
+            <td>
+                <ul>
+                    <li>Tích hợp Google Play Services trên Android</li>
+                </ul>
+            </td>
+        </tr>
+		<tr>
+            <td>0.4</br>
+                <a href="https://shabugames.bitbucket.io/play/2d_random_td/0_4/">Web</a></br>
+                <a href="https://drive.google.com/file/d/1rjbth4tZ0cCyoYjFNa7i86PoPGtqOiJ4/view?usp=sharing">APK</a></br>
+				iOS (Test Flyer)
+            </td>
+            <td>02/08/2023</td>
+            <td>
+                <ul>
+                    <li>Hoàn thiện loop phần game play (xây/merge trụ -> bắn hết quái/hết máu -> thắng/thua -> về lại trang lobby )</li>
+                    <li>Merge trụ (3 cấp) , mỗi cấp sẽ bắn nhanh hơn 1 chút</li>
+                    <li>Thêm trang loading cho game chạy mượt hơn</li>
+                </ul>
+            </td>
+        </tr>
+		<tr>
+            <td>0.5</br>
+                <a href="https://shabugames.bitbucket.io/play/2d_random_td/0_5/">Web</a></br>
+            </td>
+            <td>18/08/2023</td>
+            <td>
+                <ul>
+                    <li>Thêm UI danh sách tướng (Hiện tại có 9 tướng , Id: 1->9 ).</li>
+                    <li>Tặng trước 6 thẻ tướng mặc định (Id: 1 -> 6).</li>
+                    <li>Các tướng hiện tại chỉ có dame base, chưa có skill.</li>
+					<li>Tướng có thể nâng cấp <b>Level</b> và <b>Grade</b>, <b>Evolve</b> vẫn chỉ có 3 cấp.</li>
+					<li>Có thể thay đổi đội hình tướng tham gia chiến đấu.</li>
+					<li>Không thể xem thông tin các tướng mình chưa sở hữu.</li>
+                </ul>
+            </td>
+        </tr>
+		<tr>
+            <td>0.6</br>
+                <a href="https://shabugames.bitbucket.io/play/2d_random_td/0_6/">Web</a></br>
+            </td>
+            <td>25/08/2023</td>
+            <td>
+                <ul>
+					<li>Fix Bugs 0.5 (1,2,3)</li>
+                    <li>Nâng Grade trong trận tốn point.</li>
+                    <li>PVE chuyển thành endless , chỉ có 5 Wave quái chính (4 wave lính + 1 wave Boss), hết 5 wave sẽ spawn lại 5 wave chính nhưng quái sẽ được buff thêm máu và point nhận được khi bị giết.</li>
+                    <li>Khi giết hết quái của 1 wave sẽ có thưởng exp và vàng , đủ 5 wave sẻ thưởng thêm kim cương</li>
+					<li>Phần thưởng chỉ lưu khi kết thúc trận, tắt ngang game sẽ không lưu</li>
+					<li>Thêm nút "Surrender" trong UI GamePlay để người chơi muốn kết thúc khi nào mình muốn</li>
+					<li>Điều chỉnh MainUI , thêm hiệu ứng các nút Tab</li>
+                </ul>
+            </td>
+        </tr>
+		<tr>
+            <td>0.7</br>
+                <a href="https://shabugames.bitbucket.io/play/2d_random_td/0_7/">Web</a></br>
+            </td>
+            <td>09/09/2023</td>
+            <td>
+                <ul>
+					<li>
+					<a href = "https://docs.google.com/spreadsheets/d/1qADCbFm7eUXeikk2MoFZ7dSX2AB-gtVaiQyJFJCpCD4/edit?usp=sharing">
+						Fix Bugs 0.6 (1,2)</a></li>
+                    <li>Chơi PVE nhận exp , khi exp đặt mốc theo config sẽ lên cấp</li>
+                    <li><b>[Shop] - Summon</b> quay x1 và x10 miễn phí</li>
+					<li><b>[Shop] - Store</b> đang để TEST nên khi không đủ kim cương sẽ có thông báo nhưng vẫn mua được vàng của gói đó</li>
+					<li><b>[Shop] - Pack</b> chưa có kết nối IAP (Khi lên store sẽ làm tiếp phần này) nên chỉ show UI chứ chưa mua được </li>
+                </ul>
+            </td>
+        </tr>
+		<tr>
+            <td>0.8</br>
+                <a href="https://shabugames.bitbucket.io/play/2d_random_td/0_8/">Web</a></br>
+            </td>
+            <td>09/10/2023</td>
+            <td>
+                <ul>
+					<li>Cập nhật UI Setting</li>
+					<li>Thêm Sound tap + BGM</li>
+					<li>Đọc config csv từ drive</li>
+					<li>Thay UI một số man hình mới</li>
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>0.9</br>
+                <a href="https://shabugames.bitbucket.io/play/2d_random_td/0_9/">Web</a></br>
+            </td>
+            <td>12/11/2023</td>
+            <td>
+                <ul>
+					<li>Cập nhật UI GamePlay , có thể chọn tướng muốn mua để test</li>
+                    <li>Cập nhật skill đánh cho các tướng : 1_Koolin , 2_Dulla , 4_Pilgrim , 6_Smoly , 7_Raul </li>
+                </ul>
+            </td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
+
